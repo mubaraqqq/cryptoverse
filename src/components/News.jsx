@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Select, Typography, Row, Col, Avatar, Card, Spin, Image } from 'antd';
+import { Select, Typography, Row, Col, Avatar, Card, Spin } from 'antd';
 import moment from 'moment';
 
 import { useGetCryptoNewsQuery } from '../services/cryptoNewsApi';
@@ -20,7 +20,7 @@ const News = ({ simplified }) => {
         <Col span={12} offset={12}><Spin size='large'/></Col>
       </Row>
     );
-  }, [])
+  }, [isFetching])
   
   return (
     <> 
