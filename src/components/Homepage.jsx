@@ -14,7 +14,7 @@ const Homepage = () => {
 
   if (isFetching) return (
       <Row align="center" justify="center">
-        <Col span={12} offset={12}><Spin size='large'/></Col>
+        <Col span={12} offset={12} style={{display: 'flex', alignItems: 'center'}}><Spin size='large' style={{height: '81vh'}}/></Col>
       </Row>
   );
 

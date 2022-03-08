@@ -20,7 +20,13 @@ const News = ({ simplified }) => {
         <Col span={12} offset={12}><Spin size='large'/></Col>
       </Row>
     );
-  }, [isFetching])
+  }, [isFetching]);
+
+  if (isFetching) return (
+    <Row align="center" justify="center">
+      <Col span={12} offset={12} style={{display: 'flex', alignItems: 'center'}}><Spin size='large' style={{height: '81vh'}}/></Col>
+    </Row>
+);
   
   return (
     <> 
